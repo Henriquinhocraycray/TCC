@@ -10,13 +10,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 97vh;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     max-width: 1200px;
 }
 
