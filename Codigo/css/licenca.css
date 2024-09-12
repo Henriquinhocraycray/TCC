@@ -2,30 +2,74 @@
 
 body{
     font-family: "Inter", sans-serif;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+p{
     margin: 0;
 }
 
 .lic-main{
+    color: white;
     background-color: #988ae8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 50px;
+    padding: 30px;
 }
 
 #lic-title{
     color: #3a009e;
     font-style: italic;
+
 }
 
 #lic-title1{
     max-width: 300px;
+    text-shadow: 2px 2px black;
+
 }
 
 .lic-submain{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
+    gap: 200px;
+}
+
+#lic-planos{
+    text-shadow: 2px 2px black;
+}
+
+#mais{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.lic-div{
+    background-color: #8377ff;
+    padding: 30px;
+    border: 2px, solid, white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+}
+
+.lic-div1{
+    background-color: #100069;
+}
+
+#price{
+    text-shadow: 2px 2px black;
+    font-size: large;
 }
