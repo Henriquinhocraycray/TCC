@@ -1,5 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media='screen' href="../css/home.css">
+</head>
 <?php
 include('conexao.php');
+include('header.php');
+
+echo '<br>';
+echo '<br>';
+echo '<h1 align="center">Pousada Tal</h1>';
 
 $sql = "SELECT * FROM cliente"; 
 
@@ -11,7 +24,7 @@ if ($result === false) {
 }
 
 if ($result->num_rows > 0) {
-    echo '<table border="1">';
+    echo '<table class="main-table">';
     echo '<tr>
     <th>Nº da Reserva</th>
     <th>Tipo de Reserva</th>
@@ -35,6 +48,8 @@ if ($result->num_rows > 0) {
         echo '<td>' . htmlspecialchars($row['telefone']) . '</td>';
         echo '<td>' . htmlspecialchars($row['pedido']) . '</td>';
         echo '<td>' . htmlspecialchars($row['preco']) . '</td>'; 
+        echo '<td><a href="detalhes.php?id=' . urlencode($row['id']) . '">Ver Detalhes</a></td>';
+
         echo '</tr>';
     }
 
