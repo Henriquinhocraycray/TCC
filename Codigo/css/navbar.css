@@ -42,10 +42,10 @@ header {
 .op a{
     text-decoration: none;
     outline: none;
-    color: #47d7ac;
+    color: white;
     font-size: 15px ;
 }
 
 .op:hover{
-    background: #432BCF;
+    background: #47d7ac;
 }
