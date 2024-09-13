@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" type="text/css" media='screen' href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" media='screen' href="../css/header.css">
 </head>
 <body>
     <header>
@@ -22,7 +22,9 @@
                 <div class="op">
                     <a class="" href="#">Dados gerais</a>
                 </div>
-                    <div class="topic"></div>
+                    <div class="topic">
+                        <img src="/imagens/Group 3.png" alt="" class="topic_img" href="#">
+                    </div>
             </div>
 
         </div>
