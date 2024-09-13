@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #004976;
-    height: 100vh;
+    height: 129vh;
     width: 32vw;
 }
 
@@ -22,6 +22,18 @@
 .det-subdiv img{
     width: 50px;
     margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.det-optdiv{
+    background-color: #004976;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.det-optdiv:hover{
+    transition: 0.5s;
+    background-color: #002942;
 }
 
 .det-subdiv a{
@@ -41,9 +53,15 @@
     width: 240px;
     height: 55px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #47d7ac;
     font-size: large;
+}
+
+#btn-mod:hover{
+    transition: 0.1s;
+    background-color: #86d7bf;
+    cursor: pointer;
 }
 
 #btn-del{
@@ -56,6 +74,80 @@
     font-size: large;
 }
 
+#btn-del:hover{
+    transition: 0.1s;
+    background-color: #f9809b;
+    cursor: pointer;
+}
+
+.cdel-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#back-btn{
+    width: 220px;
+    height: 25px;
+    border: 0;
+    background-color: #002c47;
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#back-btn:hover{
+    transition: 0.1s;
+    background-color: #384349;
+    cursor: pointer;
+}
+
+#btn-cdel{
+    width: 220px;
+    height: 25px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ff577c;
+    color: white;
+    font-size: large;
+}
+
+#btn-cdel:hover{
+    transition: 0.1s;
+    background-color: #f9809b;
+    cursor: pointer;
+}
+
+
 .det-div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
     width: 68vw;
+    gap: 20px;
+}
+
+#div2-title{
+    font-size: 60px;
+    font-weight: 70;
+}
+
+.det-div2 img{
+    width: 130px;
+}
+
+#cliente-data, #reserva-data{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #004976;
+    color: white;
+    gap: 10px;
+}
+
+.hidden {
+    display: none !important;
 }
