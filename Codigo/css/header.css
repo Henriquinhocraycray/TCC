@@ -49,3 +49,15 @@ header {
 .op:hover{
     background: #47d7ac;
 }
+.topic{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 180px;
+}
+.topic_img{
+    width: 33px;
+    height: 33px;
+}
