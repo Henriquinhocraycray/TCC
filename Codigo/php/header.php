@@ -22,7 +22,9 @@
                 <div class="op">
                     <a class="" href="#">Dados gerais</a>
                 </div>
-                    <div class="topic"></div>
+                    <div class="topic">
+                        <img src="/imagens/Group 3.png" alt="" class="topic_img">
+                    </div>
             </div>
 
         </div>
