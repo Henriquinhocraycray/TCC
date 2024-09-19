@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #004976;
-    height: 129vh;
+    height: 150vh;
     width: 32vw;
 }
 
@@ -64,11 +64,26 @@
     cursor: pointer;
 }
 
+#btn-cmod{
+    width: 220px;
+    height: 25px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #f2fe00;
+    font-size: large;
+}
+
+#btn-cmod:hover{
+    transition: 0.1s;
+    background-color: #faff91;
+    cursor: pointer;
+}
+
 #btn-del{
     width: 240px;
     height: 55px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #ff577c;
     color: white;
     font-size: large;
@@ -92,7 +107,7 @@
     border: 0;
     background-color: #002c47;
     color: white;
-    border-radius: 10px;
+    border-radius: 4px;
     font-size: large;
 }
 
@@ -106,7 +121,7 @@
     width: 220px;
     height: 25px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #ff577c;
     color: white;
     font-size: large;
@@ -146,6 +161,50 @@
     background-color: #004976;
     color: white;
     gap: 10px;
+}
+
+.cliente-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-cliente-form{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.sub-cliente-form h1{
+    max-width: 200px;
+}
+
+.cliente-form input{
+    border-radius: 4px;
+    padding: 8px;
+    font-size: large;
+}
+
+.cliente-form-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.reserva-form-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .hidden {
