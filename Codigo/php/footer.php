@@ -8,7 +8,6 @@
 <body>
     <footer>
         <div class="">
-            <
         </div>
     </footer>
 </body>

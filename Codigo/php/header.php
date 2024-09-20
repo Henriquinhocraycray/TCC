@@ -23,8 +23,8 @@
             </div>
 
             <div class="off-screen-menu">
-                <div class="off-screen-items">
-                    <ul style="list-style: none;">
+                <div class="menu-list">
+                    <ul style="list-style: none; padding:none;">
                     
                         <li>Termos de condições de uso</li>
                         <li>Configurações da conta</li>
