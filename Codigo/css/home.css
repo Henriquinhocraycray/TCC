@@ -1,3 +1,27 @@
+.home-head{
+    margin-left: 20px;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#home-head{
+    text-decoration: none;
+    color: black;
+}
+
+.home-head:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #000000;
+}
+
+#home-head:hover{
+    color: white;
+}
+
+
 .main-table {
     width: 100%;
     border-collapse: collapse;

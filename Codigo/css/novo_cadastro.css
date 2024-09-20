@@ -1,0 +1,101 @@
+.novoc-maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.novoc-maindiv h1{
+    font-weight: 80;
+    font-size: 50px;
+}
+
+.novoc-maindiv h3{
+    font-weight: 80;
+    font-size: 30px;
+}
+
+.novoc-subdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.novoc-div{
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    height: 477px;
+    padding: 20px;
+    background-color: #004976;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+}
+
+.novoc-div h2{
+    font-weight: 80;
+    margin-bottom: 10px;
+}
+
+.novoc-div label{
+    margin-top: 20px;
+    font-weight: 80;
+    margin-bottom: 5px;
+}
+
+.novoc-div input{
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 5px;
+    background-color: #004976;
+    color: white;
+    font-size: large;
+}
+
+.novoc-btndiv{
+    display: flex;
+    width: 86vw;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 30px;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+#btn-novoc-back{
+    width: 130px;
+    height: 47px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    font-size: large;
+}
+
+#btn-novoc-back:hover{
+    transition: 0.2s;
+    background-color: #797979;
+    cursor: pointer;
+}
+
+#btn-novoc-c{
+    width: 200px;
+    height: 47px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #47d7ac;
+    font-size: large;
+    
+}
+
+#btn-novoc-c:hover{
+    transition: 0.2s;
+    background-color: rgb(169, 213, 200);
+    cursor: pointer;
+}

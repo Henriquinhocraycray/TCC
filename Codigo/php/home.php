@@ -9,11 +9,19 @@
 <?php
 include('conexao.php');
 include('header.php');
+?>
 
-echo '<br>';
-echo '<br>';
-echo '<h1 align="center">Pousada Tal</h1>';
+<br>
+<br>
+<h1 align="center">Pousada Tal</h1>
 
+<a id="home-head" href="novo_cadastro.php">
+<div class="home-head">
+<h3>+ Novo Cadastro</h3>
+</div>
+</a>
+
+<?php
 $sql = "SELECT * FROM cliente"; 
 
 $result = $mysqli->query($sql);

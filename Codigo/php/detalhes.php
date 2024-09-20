@@ -11,6 +11,27 @@
         }
     </style>
 </head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#cpf').mask('000.000.000-00');
+
+    $('#telefone').mask('(00) 00000-0000');
+
+    $('#data').mask('00/00/0000');
+
+    $('#preco').mask('#,##0.00', {reverse: true});
+
+    $('#n_reserva').mask('000000000');
+    
+    $('#n_pessoas').mask('00');
+
+
+});
+</script>
+
 <body>
 
 <?php
@@ -99,16 +120,16 @@ include('header.php');
                     echo '<input type="hidden" name="id" value="' . htmlspecialchars($row['id']) . '">';
                     echo '<h1>Dados do Cliente</h1>';
                     echo '<h3>Nome Completo</h3>';
-                    echo '<p><input type="text" name="nome" value="' . htmlspecialchars($row['nome']) . '"></p>';
+                    echo '<p><input type="text" id="nome" name="nome" value="' . htmlspecialchars($row['nome']) . '"></p>';
                     echo '<hr>';
                     echo '<h3>CPF</h3>';
-                    echo '<p><input type="text" name="cpf" value="' . htmlspecialchars($row['cpf']) . '"></p>';
+                    echo '<p><input type="text" id="cpf" name="cpf" value="' . htmlspecialchars($row['cpf']) . '"></p>';
                     echo '<hr>';
                     echo '<h3>E-mail</h3>';
-                    echo '<p><input type="email" name="email" value="' . htmlspecialchars($row['email']) . '"></p>';
+                    echo '<p><input type="email" id="email" name="email" value="' . htmlspecialchars($row['email']) . '"></p>';
                     echo '<hr>';
                     echo '<h3>Telefone</h3>';
-                    echo '<p><input type="text" name="telefone" value="' . htmlspecialchars($row['telefone']) . '"></p>';
+                    echo '<p><input type="text" id="telefone" name="telefone" value="' . htmlspecialchars($row['telefone']) . '"></p>';
                     echo '<hr>';
                 echo '</div>';
                     echo '<br>';
@@ -116,19 +137,19 @@ include('header.php');
                 echo '<div class="reserva-form-data">';
                     echo '<h1>Informações da Reserva</h1>';
                     echo '<h3>Nº da Reserva</h3>';
-                    echo '<p><input type="text" name="n_reserva" value="' . htmlspecialchars($row['n_reserva']) . '"></p>';
+                    echo '<p><input type="text" id="n_reserva" name="n_reserva" value="' . htmlspecialchars($row['n_reserva']) . '"></p>';
                     echo '<hr>';
                     echo '<h3>Tipo de Reserva</h3>';
-                    echo '<p><input type="text" name="tipo_reserva" value="' . htmlspecialchars($row['tipo_reserva']) . '"></p>';
+                    echo '<p><input type="text" id="tipo_reserva" name="tipo_reserva" value="' . htmlspecialchars($row['tipo_reserva']) . '"></p>';
                     echo '<hr>';
                     echo '<h3>Nº de Pessoas</h3>';
-                    echo '<p><input type="text" name="n_pessoas" value="' . htmlspecialchars($row['n_pessoas']) . '"></p>';
+                    echo '<p><input type="text" id="n_pessoas" name="n_pessoas" value="' . htmlspecialchars($row['n_pessoas']) . '"></p>';
                     echo '<hr>';
                     echo '<h3>Pedido Especial</h3>';
-                    echo '<p><input type="text" name="pedido" value="' . htmlspecialchars($row['pedido']) . '"></p>';
+                    echo '<p><input type="text" id="pedido" name="pedido" value="' . htmlspecialchars($row['pedido']) . '"></p>';
                     echo '<hr>';
                     echo '<h3>Preço</h3>';
-                    echo '<p><input type="text" name="preco" value="' . htmlspecialchars($row['preco']) . '"></p>';
+                    echo '<p><input type="text" id="preco" name="preco" value="' . htmlspecialchars($row['preco']) . '"></p>';
                     echo '<hr>';
                 echo '</div>';
                 echo '</div>';
