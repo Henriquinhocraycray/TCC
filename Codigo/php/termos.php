@@ -107,6 +107,32 @@ $title = "Termos e Uso";
             <p> - Uso Indevido: Qualquer violação destes Termos.</p>
             <p> - Violação de Direitos: De terceiros, relacionada a conteúdo transmitido ou publicado por você.</p>
         </section>
+
+        <section>
+            <h2> 9. Rescisão</h2>
+            <h4> Encerramento do Acesso</h4>
+            <p> Podemos suspender ou encerrar sua conta e acesso ao Serviço a qualquer momento, com ou sem aviso prévio, por qualquer motivo, incluindo violação destes Termos.</p>
+            <p> - Consequências da Rescisão: A rescisão não isenta você de responsabilidades ou obrigações acumuladas até a data de término. Seus direitos e nossas responsabilidades permanecem válidos até o término.</p>
+        </section>
+
+        <section>
+            <h2> 10. Lei Aplicável e Jurisdição</h2>
+            <h4> Aplicação das Leis</h4>
+            <p> Estes Termos são regidos pelas leis do Brasil, excluindo princípios de conflitos de leis. Qualquer disputa relacionada a estes Termos será resolvida exclusivamente nos tribunais da Santo André, São Paulo, que terão jurisdição exclusiva.</p>
+        </section>
+
+        <section>
+            <h2> 11. Disposições Gerais</h2>
+            <h4> Validade das Disposições</h4>
+            <p> Se qualquer disposição destes Termos for considerada inválida ou inexequível por um tribunal competente, a validade e a exequibilidade das disposições restantes não serão afetadas. A falha da LaR Database em exigir o cumprimento de qualquer disposição não constitui renúncia a essa disposição ou a qualquer outro direito.</p>
+        </section>
+
+        <section>
+            <h2> 12. Contato</h2>
+            <h4> Como Entrar em Contato</h4>
+            <p>  Como Entrar em Contato
+            Para perguntas, comentários ou esclarecimentos sobre estes Termos, entre em contato com a LaR Database pelos seguintes meios:</p>
+        </section>
     </main>
     <br>
     <hr>
