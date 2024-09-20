@@ -26,10 +26,14 @@
                 <div class="menu-list">
                     <ul style="list-style: none; padding:none;">
                     
-                        <li href="#">Termos de condições de uso</li>
-                        <br>
-                        <br>
-                        <li>Configurações da conta</li>
+                        <div class="uoi">
+                            <li href="#">Termos de condições de uso</li>
+                        </div>
+                        <div class="uol">
+                                <br>
+                                <br>
+                            <li href="#">Configurações da conta</li>
+                        </div>
                         <br>
                         <br>
                         <br>
