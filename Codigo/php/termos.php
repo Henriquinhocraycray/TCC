@@ -10,7 +10,7 @@ $title = "Termos e Uso";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="styles.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="stylesheet" href="termos.css"> 
 </head>
 <body>
     <header>
@@ -132,13 +132,15 @@ $title = "Termos e Uso";
             <h4> Como Entrar em Contato</h4>
             <p>  Como Entrar em Contato
             Para perguntas, comentários ou esclarecimentos sobre estes Termos, entre em contato com a LaR Database pelos seguintes meios:</p>
+            <p> E-mail: </p>
+            <p> Endereço: </p>
+            <p> Telefone: </p>
         </section>
     </main>
     <br>
     <hr>
-
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> LaR Database 2024. Todos os direitos reservados.</p>
+        <p>&copy; <?php echo date("Y"); ?> LaR Database 2024. Todos os direitos reservados. </p>
     </footer>
 </body>
 </html>
