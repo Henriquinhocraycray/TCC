@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" media='screen' href="../css/footer.css">
     <title>footer</title>
 </head>
 <body>
-    <footer>
-        <div class="">
-        </div>
-    </footer>
+
 </body>
+  <footer class="footer">
+    <div id="footer-content">
+    <div class="footer-container">
+      <img src="" alt="">
+      <h1>LaR Database</h1>
+      <div id="square"></div>
+    </div> 
+    <div id="footer-block">
+      <ul style="list-style: none; ">
+        <li>CNPJ:58.426.937/0001-03</li>
+        <li>Termos de uso</li>
+        <li>Sobre nós</li>
+        <span></span>
+      </ul>
+    </div>
+    <div class="under-container">
+      <div class="circle-bg">
+        <div>
+
+        </div>
+      </div>
+      <div class="content-1">
+        <p>E-mail: LaRDatabase@outlook.com</p>
+      </div>
+      <div class="content-2">
+        <p>Precisa de ajuda com algo?</p>
+        <p>Contate-nos: 
+        (11) 98890-7085</p>
+      </div>
+      <div class="content-3">
+        <p>Home</p>
+        <p>Login</p>
+        <p>Registre-se</p>
+        <p href="#">Sair</p>
+        <p>2024® LaR Database all rights deserved</p>
+      </div>
+    </div>
+    </div>
+  </footer>
 </html>

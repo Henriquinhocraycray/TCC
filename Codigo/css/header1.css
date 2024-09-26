@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #f8f9fa;
+    background: #f8f9fa;
 }
 
 .navbar {
@@ -74,8 +74,8 @@ header {
 }
  
 .ham-menu{
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     margin-left: auto;
     position: relative;
     top: 0;
