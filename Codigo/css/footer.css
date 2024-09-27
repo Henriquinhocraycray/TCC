@@ -39,6 +39,12 @@
   font-weight: bold;
   padding: none;
 }
+#footer-block li:nth-child(2){
+  cursor:  pointer;
+}
+#footer-block li:nth-child(3){
+  cursor: pointer;
+}
 #footer-block li{
   margin-right: 100px;
   display: inline;

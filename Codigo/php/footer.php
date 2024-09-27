@@ -20,8 +20,8 @@
     <div id="footer-block">
       <ul style="list-style: none; ">
         <li>CNPJ:58.426.937/0001-03</li>
-        <li>Termos de uso</li>
-        <li>Sobre nós</li>
+        <li href="#">Termos de uso</li>
+        <li href="#">Sobre nós</li>
         <span></span>
       </ul>
     </div>
@@ -40,9 +40,9 @@
         (11) 98890-7085</p>
       </div>
       <div class="content-3">
-        <p>Home</p>
-        <p>Login</p>
-        <p>Registre-se</p>
+        <p href="#">Home</p>
+        <p href="#">Login</p>
+        <p href="#">Registre-se</p>
         <p href="#">Sair</p>
         <p>2024® LaR Database all rights deserved</p>
       </div>
