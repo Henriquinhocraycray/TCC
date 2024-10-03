@@ -3,15 +3,19 @@
   font-family: Arial, sans-serif;
 
 }
-footer{
-  position: fixed;
-    bottom: 0;
+
+
+.footer{
+  position: relative;
     left: 0;
     right: 0;
     /* Altura do footer */
     background-color: #333;
     color: white;
     text-align: center;
+}
+.footer::after{
+  overflow: hidden;
 }
 
 .footer-content{
@@ -135,6 +139,7 @@ footer{
   text-decoration: underline;
 }
 .circle-bg{
+  max-height: 200px;
   display: flex;
   width: 25%;
   height: 100%;
@@ -148,7 +153,7 @@ footer{
   border-radius: 50%;
   z-index: 2;
   left: -310px;
-  top: -200px;
+  bottom: -50px;
 }
 
 .circle-green {
@@ -159,5 +164,5 @@ footer{
   border-radius: 50%;
   z-index: 1;
   left: -180px;
-  top: -170px;
+  bottom: -50px;
 }
