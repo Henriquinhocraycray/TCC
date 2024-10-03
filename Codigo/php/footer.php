@@ -22,21 +22,20 @@
         <li>CNPJ:58.426.937/0001-03</li>
         <li href="#">Termos de uso</li>
         <li href="#">Sobre nós</li>
-        <span></span>
       </ul>
+      <span></span>
     </div>
     <div class="under-container">
       <div class="circle-bg">
-        <div>
-
-        </div>
+        <div class="circle-black"></div>
+        <div class="circle-green"></div>
       </div>
       <div class="content-1">
-        <p>E-mail: LaRDatabase@outlook.com</p>
+        <p>E-mail: <br>LaRDatabase@outlook.com</p>
       </div>
       <div class="content-2">
         <p>Precisa de ajuda com algo?</p>
-        <p>Contate-nos: 
+        <p>Contate-nos: <br>
         (11) 98890-7085</p>
       </div>
       <div class="content-3">
