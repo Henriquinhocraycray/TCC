@@ -27,12 +27,12 @@
                     <ul style="list-style: none; padding:none;">
                     
                         <div class="uoi">
-                            <li href="#">Termos de condições de uso</li>
+                            <li><a href="termos.php">Termos de condições de uso</a></li>
                         </div>
-                        <div class="uol">
+                        <div class="uoi">
                                 <br>
                                 <br>
-                            <li href="#">Configurações da conta</li>
+                            <li> <a href="#">Configurações da conta</a></li>
                         </div>
                         <br>
                         <br>

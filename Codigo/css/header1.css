@@ -145,17 +145,15 @@ header {
     background: #ffff;
     color: #0C111B;
 }
-.uoi{
+.uoi a{
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
-.uoi:hover{
+.uoi a:hover{
     text-decoration: underline;
 }
-.uol{
-    cursor:pointer;
-    transition: 0.3s ease;
-}
-.uol:hover{
-    text-decoration: underline;
+
+.uoi a{
+    color: white;
 }
