@@ -1,12 +1,13 @@
 * {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter';;
 
 }
 
 
 .footer{
-  position: relative;
+    bottom: 0;
+    position: fixed;
     left: 0;
     right: 0;
     /* Altura do footer */
@@ -14,9 +15,7 @@
     color: white;
     text-align: center;
 }
-.footer::after{
-  overflow: hidden;
-}
+
 
 .footer-content{
   bottom: 0%;
@@ -152,7 +151,7 @@
   background-color: black;
   border-radius: 50%;
   z-index: 2;
-  left: -310px;
+  left: -310px; 
   bottom: -50px;
 }
 
@@ -160,7 +159,7 @@
   position: absolute;
   width: 450px;
   height: 450px;
-  background-color: #47D7AC; /* Adjust color if needed */
+  background-color: #47D7AC; 
   border-radius: 50%;
   z-index: 1;
   left: -180px;

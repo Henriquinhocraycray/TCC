@@ -1,6 +1,5 @@
 <?php
 // termos.php
-
 $title = "Termos e Uso";
 ?>
 
@@ -13,9 +12,9 @@ $title = "Termos e Uso";
     <link rel="stylesheet" href="termos.css"> 
 </head>
 <body>
-    <header>
-        <h1><?php echo $title; ?></h1>
-    </header>
+    <?php
+        include('header.php');
+    ?>
     
     <main>
         <section>
