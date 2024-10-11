@@ -61,10 +61,10 @@ include('header.php');
         
         <?php
         include('conexao.php');
+        include('protecao.php');
 
-        if (isset($_GET['id'])) {
-            $id = $mysqli->real_escape_string($_GET['id']);
-
+        $id = $_SESSION['id'];
+        
             $sql = "SELECT * FROM usuario WHERE id = '$id'";
             $result = $mysqli->query($sql);
 
@@ -194,10 +194,7 @@ include('header.php');
 
             } else {
                 echo '<p>No details found for this ID.</p>';
-            }
-        } else {
-            echo '<p>No ID provided.</p>';
-        }
+            };
 
         $mysqli->close();
         ?>

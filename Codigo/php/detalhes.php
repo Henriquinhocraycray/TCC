@@ -36,6 +36,7 @@ $(document).ready(function() {
 
 <?php
 include('header.php');
+include('protecao.php')
 ?>
 
 <div class="det-maindiv">

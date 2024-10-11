@@ -36,10 +36,17 @@
             $quantidade = $sql_query->num_rows;
 
             if($quantidade == 1) {
-
                 $usuario = $sql_query->fetch_assoc();
 
+                session_start();
+
+                $_SESSION['id'] = $usuario['id'];
+                $_SESSION['registro_func'] = $usuario['registro_func']; 
+                $_SESSION['nome'] = $usuario['nome']; 
+                $_SESSION['cargo'] = $usuario['cargo'];
+
                 echo "<script>alert('Login bem sucedido!');</script>";
+                echo '<script>window.location.href="home.php";</script>';
             } else {
                 echo "<script>alert('Falha ao logar! Registro ou senha incorretos');</script>";
             }
@@ -47,7 +54,6 @@
     }
 
 ?>
-
             <form action="login.php" method="POST">
                 <label for="numero-funcionario">Informe seu registro de funcionário (Nº F)</label>
                 <input type="text" id="numero-funcionario" name="registro_func" required>

@@ -141,10 +141,20 @@ header {
     transition: 0.3s ease;
 }
 
+.uop a{
+    color: white;
+    text-decoration: none;
+}
+
+.uop a:hover{
+    color: #0C111B;
+}
+
 .uop:hover{
     background: #ffff;
     color: #0C111B;
 }
+
 .uoi a{
     cursor: pointer;
     transition: 0.3s ease;

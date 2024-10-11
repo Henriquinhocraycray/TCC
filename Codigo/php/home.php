@@ -9,6 +9,8 @@
 <?php
 include('conexao.php');
 include('header.php');
+
+include('protecao.php');
 ?>
 
 <br>
@@ -67,5 +69,4 @@ if ($result->num_rows > 0) {
 }
 
 $mysqli->close();
-include('footer.php')
 ?>

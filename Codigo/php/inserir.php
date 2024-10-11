@@ -1,5 +1,6 @@
 <?php
 include('conexao.php');
+include('protecao.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

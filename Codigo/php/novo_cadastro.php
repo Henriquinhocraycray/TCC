@@ -31,7 +31,8 @@ $(document).ready(function() {
 
 <?php
     include('conexao.php');
-    include('header.php')
+    include('header.php');
+    include('protecao.php');
 ?>
 
 <div class="novoc-maindiv">

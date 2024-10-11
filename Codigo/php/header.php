@@ -13,7 +13,7 @@
                 <img class="logo_img" src="" alt="">
             </div>
             <div class="op">
-                <a href="#">Página inicial</a>
+                <a href="home.php">Página inicial</a>
             </div>
             <div class="op">
                 <a href="#">Dados da empresa</a>
@@ -32,14 +32,14 @@
                         <div class="uoi">
                                 <br>
                                 <br>
-                            <li> <a href="#">Configurações da conta</a></li>
+                            <li> <a href="conta.php">Configurações da conta</a></li>
                         </div>
                         <br>
                         <br>
                         <br>
                         <br>
                         <div class="uop">
-                            <li href="#">Sair</li>
+                            <li><a href="logout.php">Sair</a></li>
                         </div>
                     </ul>
                 </div>
