@@ -14,10 +14,10 @@
 <?php
     include('conexao.php');
 
-    if( isset($_POST['credencial']) || isset($_POST['senha'])) {
-        if (strlen($_POST['credencial']) == 0) {
+    if( isset($_POST['registro_func']) || isset($_POST['senha'])) {
+        if (strlen($_POST['registro_func']) == 0) {
 
-            echo '<script>alert("Preencha suas credenciais");</script>';
+            echo '<script>alert("Preencha seu registro!");</script>';
 
 
         } else if(strlen($_POST['senha']) == 0){
@@ -26,11 +26,11 @@
 
         } else {
 
-            $credencial = $mysqli->real_escape_string($_POST['credencial']);
+            $registro_func = $mysqli->real_escape_string($_POST['registro_func']);
             $senha = $mysqli->real_escape_string($_POST['senha']);
 
 
-            $sql_code = "SELECT * FROM usuario WHERE credencial = '$credencial' AND  senha = '$senha'";
+            $sql_code = "SELECT * FROM usuario WHERE registro_func = '$registro_func' AND  senha = '$senha'";
             $sql_query = $mysqli->query($sql_code) or die("Falha na execução    do código SQL: " . $mysqli->error);
 
             $quantidade = $sql_query->num_rows;
@@ -41,7 +41,7 @@
 
                 echo "<script>alert('Login bem sucedido!');</script>";
             } else {
-                echo "<script>alert('Falha ao logar! Email ou senha     incorretos');</script>";
+                echo "<script>alert('Falha ao logar! Registro ou senha incorretos');</script>";
             }
         }
     }
@@ -49,8 +49,8 @@
 ?>
 
             <form action="login.php" method="POST">
-                <label for="numero-funcionario">Informe suas credenciais (Nº F)</label>
-                <input type="text" id="numero-funcionario" name="credencial" required>
+                <label for="numero-funcionario">Informe seu registro de funcionário (Nº F)</label>
+                <input type="text" id="numero-funcionario" name="registro_func" required>
                 
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" required>
