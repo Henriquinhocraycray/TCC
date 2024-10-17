@@ -68,5 +68,7 @@ if ($result->num_rows > 0) {
     echo "No records found.";
 }
 
+include('footer.php');
+
 $mysqli->close();
 ?>

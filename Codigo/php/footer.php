@@ -26,11 +26,14 @@
       </ul>
       <span></span>
     </div>
+    
     <div class="under-container">
+      
       <div class="circle-bg">
         <div class="circle-black"></div>
         <div class="circle-green"></div>
-      </div>
+      </div>  
+
       <div class="content-1">
         <p>E-mail: <br>LaRDatabase@outlook.com</p>
       </div>
