@@ -20,9 +20,10 @@
     </div> 
     <div id="footer-block">
       <ul style="list-style: none; ">
-        <li>CNPJ:58.426.937/0001-03</li>
-        <li href="#">Termos de uso</li>
-        <li href="#">Sobre nós</li>
+        <li><div></div></li>
+        <li><div>CNPJ:58.426.937/0001-03</div></li>
+        <li href="#"><Div>Termos de uso</Div></li>
+        <li href="#"><Div>Sobre nós</Div></li>
       </ul>
       <span></span>
     </div>
