@@ -37,7 +37,7 @@
   height: 80px;
   width: 80px;
   position: absolute;
-  top: ;
+  top:  ;
   right: -40px;
   transform: rotate(45deg);
 }
@@ -164,27 +164,29 @@
 }
 .circle-black {
   position: absolute;
-  
-  width: 500px;
-  height: 500px;
-  
+  height: 400px;
+  width: 260px;
   background-color: black;
-  border-radius: 50%;
+  border-top-right-radius: 4px;
   z-index: 2;
-  left: -280px; 
-  bottom: -75px;
+  left: 0px; 
+  bottom: 0px;
 }
 
 .circle-green {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  
-  width: 450px;
-  height: 450px;
-  
-  background-color: #47D7AC; 
-  border-radius: 50%;
-  z-index: 1;
-  left: -140px;
-
-  bottom: -50px;
+  height: 420px;
+  width: 180px;
+  background-color: #47D7AC;
+  border-top-right-radius: 4px;
+  z-index: 2;
+  left: 0px; 
+  bottom: 0px;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

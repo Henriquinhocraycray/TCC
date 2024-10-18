@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" type="text/css" media='screen' href="../css/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <title>footer</title>
 </head>
 <body>
@@ -32,7 +33,18 @@
       
       <div class="circle-bg">
         <div class="circle-black"></div>
-        <div class="circle-green"></div>
+        <div class="circle-green">
+            <div class="links">
+              <h2>
+                Redes <br>
+                Sociais:
+              </h2>
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+            </div>
+        </div>
       </div>  
 
       <div class="content-1">
