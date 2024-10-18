@@ -162,7 +162,7 @@
   height: 100%;
   position: relative;
 }
-/*.circle-black {
+.circle-black {
   position: absolute;
   
   width: 500px;
@@ -188,4 +188,3 @@
 
   bottom: -50px;
 }
-  */  
