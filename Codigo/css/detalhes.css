@@ -13,6 +13,10 @@
     width: 32vw;
 }
 
+.acc-div {
+    height: 220vh;
+}
+
 .det-subdiv{
     display: flex;
     flex-direction: column;
