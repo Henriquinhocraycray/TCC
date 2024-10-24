@@ -22,9 +22,8 @@
   bottom: 0%;
 }
 .footer-container{
-  overflow: hidden;
   width: 100%;
-  /*margin-left: 80px;*/
+  margin-left: 80px;
   font-size: 18px;
   height: 120px;
   background: #004976;
@@ -41,7 +40,6 @@
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-bottom: 70px solid #003556;
-  top:  ;
   right: -25px;
   transform: rotate(-90deg);
 }
@@ -169,7 +167,7 @@
 .circle-black {
   position: absolute;
   height: 400px;
-  width: 260px;
+  width: 280px;
   background-color: black;
   border-top-right-radius: 4px;
   z-index: 2;
@@ -182,7 +180,7 @@
   justify-content: center;
   position: absolute;
   height: 420px;
-  width: 180px;
+  width: 150px;
   background-color: #47D7AC;
   border-top-right-radius: 4px;
   z-index: 2;
