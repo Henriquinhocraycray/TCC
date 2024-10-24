@@ -40,7 +40,7 @@ include('header.php');
 
 <div class="det-maindiv">
 
-    <div class="det-div1" id="det-div1">
+    <div class="det-div1 acc-div" id="det-div1">
         <div class="det-subdiv">
             <a href="home.php"><img src="../img/seta.png" alt="Back"></a>
             <a href="#" id="cliente-data-link">
