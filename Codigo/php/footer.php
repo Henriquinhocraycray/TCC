@@ -39,10 +39,10 @@
                 Redes <br>
                 Sociais:
               </h2>
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <img src="../img/facebook.png" alt="">
+              <img src="../img/instagram.png" alt="">
+              <img src="../img/whatsapp.png" alt="">
+              <img src="../img/linkedn.png" alt="">
             </div>
         </div>
       </div>  
@@ -56,7 +56,7 @@
         (11) 98890-7085</p>
       </div>
       <div class="content-3">
-        <p href="../img/gr">Home</p>
+        <p href="#">Home</p>
         <p href="#">Login</p>
         <p href="#">Registre-se</p>
         <p href="#">Sair</p>

@@ -189,6 +189,12 @@
 }
 .links{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.links img{
+  height: 60px;
+  width: 60px;
 }
