@@ -56,7 +56,7 @@
         (11) 98890-7085</p>
       </div>
       <div class="content-3">
-        <p href="#">Home</p>
+        <p href="../img/gr">Home</p>
         <p href="#">Login</p>
         <p href="#">Registre-se</p>
         <p href="#">Sair</p>
