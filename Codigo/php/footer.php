@@ -33,7 +33,19 @@
       
       <div class="circle-bg">
         <div class="circle-black">
-          <div class=""></div>
+          <div class="telephone">
+            <p>(32)<br> 
+            9<br>
+            8<br>
+            9<br>
+            6<br>
+            1<br>
+            |<br>
+            9<br>
+            6<br>
+            1<br>
+            6</p>
+          </div>
         </div>
         <div class="circle-green">
             <div class="links">

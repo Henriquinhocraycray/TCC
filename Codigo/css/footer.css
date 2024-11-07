@@ -169,7 +169,8 @@
 .circle-black {
   position: absolute;
   height: 400px;
-  width: 280px;
+  width: 130px;
+  margin-left: 150px;
   background-color: black;
   border-top-right-radius: 4px;
   z-index: 2;
@@ -199,4 +200,10 @@
 .links img{
   height: 60px;
   width: 60px;
+}
+.telephone{
+  margin-top: 85px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
