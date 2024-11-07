@@ -32,7 +32,9 @@
     <div class="under-container">
       
       <div class="circle-bg">
-        <div class="circle-black"></div>
+        <div class="circle-black">
+          <div class=""></div>
+        </div>
         <div class="circle-green">
             <div class="links">
               <h2>
