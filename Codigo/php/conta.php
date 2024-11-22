@@ -46,9 +46,6 @@ include('header.php');
             <a href="#" id="cliente-data-link">
                 <div class="det-optdiv">Informações Pessoais</div>
             </a>
-            <a href="#" id="reserva-data-link">
-                <div class="det-optdiv">Informações da Empresa</div>
-            </a>
             <hr>
             <button id="btn-mod">Modificar Informações</button>
             <button id="btn-del">Excluir Informações</button>
@@ -116,24 +113,7 @@ include('header.php');
                         echo '<hr>';
                     echo '</div>';
 
-                    echo '<div id="reserva-title-link" class="hidden"><h2>Informações da Reserva</h2><br></div>';
-                    echo '<div id="reserva-data" class="hidden">';
-                        echo '<h3>Nº da Reserva</h3>';
-                        echo '<p>' . htmlspecialchars($row['n_reserva']) . '</p>';
-                        echo '<hr>';
-                        echo '<h3>Tipo de Reserva</h3>';
-                        echo '<p>' . htmlspecialchars($row['tipo_reserva']) . '</p>';
-                        echo '<hr>';
-                        echo '<h3>Nº de Pessoas</h3>';
-                        echo '<p>' . htmlspecialchars($row['n_pessoas']) . '</p>';
-                        echo '<hr>';
-                        echo '<h3>Pedido Especial</h3>';
-                        echo '<p>' . htmlspecialchars($row['pedido']) . '</p>';
-                        echo '<hr>';
-                        echo '<h3>Preço Total</h3>';
-                        echo '<p>' . htmlspecialchars($row['preco']) . '</p>';
-                        echo '<hr>';
-                    echo '</div>';
+                    
                 echo '</div>';
 
                 echo '<div id="form-container" class="hidden form-container">';
@@ -158,24 +138,6 @@ include('header.php');
                 echo '</div>';
                     echo '<br>';
                     echo '<br>';
-                echo '<div class="reserva-form-data">';
-                    echo '<h1>Informações da Reserva</h1>';
-                    echo '<h3>Nº da Reserva</h3>';
-                    echo '<p><input type="text" id="n_reserva" name="n_reserva" value="' . htmlspecialchars($row['n_reserva']) . '"></p>';
-                    echo '<hr>';
-                    echo '<h3>Tipo de Reserva</h3>';
-                    echo '<p><input type="text" id="tipo_reserva" name="tipo_reserva" value="' . htmlspecialchars($row['tipo_reserva']) . '"></p>';
-                    echo '<hr>';
-                    echo '<h3>Nº de Pessoas</h3>';
-                    echo '<p><input type="text" id="n_pessoas" name="n_pessoas" value="' . htmlspecialchars($row['n_pessoas']) . '"></p>';
-                    echo '<hr>';
-                    echo '<h3>Pedido Especial</h3>';
-                    echo '<p><input type="text" id="pedido" name="pedido" value="' . htmlspecialchars($row['pedido']) . '"></p>';
-                    echo '<hr>';
-                    echo '<h3>Preço</h3>';
-                    echo '<p><input type="text" id="preco" name="preco" value="' . htmlspecialchars($row['preco']) . '"></p>';
-                    echo '<hr>';
-                echo '</div>';
                 echo '</div>';
                     echo '<button id="btn-cmod" type="submit">Salvar Alterações</button>';
                     echo '<button id="back-btn" type="button">Voltar</button>';
@@ -205,13 +167,10 @@ include('header.php');
 
     document.addEventListener('DOMContentLoaded', function() {
         const clienteDataLink = document.getElementById('cliente-data-link');
-        const reservaDataLink = document.getElementById('reserva-data-link');
         const formContainer = document.getElementById('form-container');
         const dataContainer = document.getElementById('data-container');
         const clienteTitleLink = document.getElementById('cliente-title-link');
-        const reservaTitleLink = document.getElementById('reserva-title-link');
         const clienteDataDiv = document.getElementById('cliente-data');
-        const reservaDataDiv = document.getElementById('reserva-data');
 
         document.getElementById('btn-mod').addEventListener('click', function() {
             dataContainer.classList.add('hidden');
@@ -228,20 +187,7 @@ include('header.php');
         clienteDataLink.addEventListener('click', function(event) {
             event.preventDefault();
             clienteDataDiv.classList.remove('hidden');
-            reservaDataDiv.classList.add('hidden');
             clienteTitleLink.classList.remove('hidden');
-            reservaTitleLink.classList.add('hidden');
-            dataContainer.classList.remove('hidden');
-            document.getElementById('delete-form').classList.add('hidden');
-            formContainer.classList.add('hidden');
-        });
-
-        reservaDataLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            reservaDataDiv.classList.remove('hidden');
-            clienteDataDiv.classList.add('hidden');
-            reservaTitleLink.classList.remove('hidden');
-            clienteTitleLink.classList.add('hidden');
             dataContainer.classList.remove('hidden');
             document.getElementById('delete-form').classList.add('hidden');
             formContainer.classList.add('hidden');
