@@ -34,7 +34,7 @@
       <div class="circle-bg">
         <div class="circle-black">
           <div class="telephone">
-            <p>(32)<br> 
+            <p>(11)<br> 
             9<br>
             8<br>
             9<br>
@@ -66,8 +66,17 @@
       </div>
       <div class="content-2">
         <p>Precisa de ajuda com algo?</p>
-        <p>Contate-nos: <br>
-        (11) 98890-7085</p>
+        Contate-nos: <br>
+        (11) 9
+            8
+            9
+            6
+            1
+            -
+            9
+            6
+            1
+            6
       </div>
       <div class="content-3">
         <p href="#">Home</p>
