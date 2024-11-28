@@ -11,12 +11,16 @@ $title = "Termos e Uso";
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="termos.css"> 
 </head>
-<body>
+
     <?php
         include('header.php');
     ?>
     
     <main>
+        <body>
+            
+        
+    <div class="content">
         <section>
             <h2> Data de Vigência: 06/12/2024</h2>
             <p> Bem-vindo ao Serviço de Hospedagem de Informações da LaR Database (“Serviço”). Estes Termos e Condições de Uso (“Termos”) estabelecem as regras para acessar e utilizar o Serviço, que é destinado ao gerenciamento e armazenamento de dados de empregados e clientes de hotéis e pousadas. Ao utilizar o Serviço, você concorda em cumprir estes Termos. Se não concordar com qualquer parte dos Termos, você não deve usar o Serviço.</p>
@@ -136,10 +140,11 @@ $title = "Termos e Uso";
             <p> Telefone: </p>
         </section>
     </main>
+    </div>
     <br>
     <hr>
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> LaR Database 2024. Todos os direitos reservados. </p>
-    </footer>
+        <?php
+            include('footer.php');
+        ?>
 </body>
 </html>

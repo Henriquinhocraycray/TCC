@@ -155,7 +155,7 @@
     width: 130px;
 }
 
-#cliente-data, #reserva-data{
+#cliente-data, #reserva-data, #pagamento-data{
     display: flex;
     flex-direction: column;
     width: 60vw;
@@ -194,15 +194,7 @@
     font-size: large;
 }
 
-.cliente-form-data{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.reserva-form-data{
+.cliente-form-data, .reserva-form-data, .delete-confirmation{
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -9,7 +9,6 @@
 <?php
 include('conexao.php');
 include('header.php');
-
 include('protecao.php');
 ?>
 
@@ -24,48 +23,52 @@ include('protecao.php');
 </a>
 
 <?php
-$sql = "SELECT * FROM cliente"; 
+$sql = "
+SELECT r.id_reserva, r.data_checkin, r.data_checkout, r.total, 
+       c.nome AS cliente_nome, c.email AS cliente_email, 
+       q.numero AS quarto_numero, q.tipo AS quarto_tipo, q.preco_noite AS preco_noite
+FROM Reservas r
+JOIN Clientes c ON r.id_cliente = c.id_cliente
+JOIN Quartos q ON r.id_quarto = q.id_quarto
+";
 
 $result = $mysqli->query($sql);
 
 if ($result === false) {
-    echo "Error: " . $mysqli->error;
-    exit;
+echo "Error: " . $mysqli->error;
+exit;
 }
 
 if ($result->num_rows > 0) {
-    echo '<table class="main-table">';
-    echo '<tr>
-    <th>Nº da Reserva</th>
-    <th>Tipo de Reserva</th>
-    <th>Nº de Pessoas</th>
-    <th>CPF</th>
-    <th>E-mail</th>
-    <th>Nome Completo</th>
-    <th>Telefone</th>
-    <th>Pedido Especial</th>
-    <th>Preço Total</th>
-    </tr>'; 
+echo '<table class="main-table">';
+echo '<tr>
+<th>Nº da Reserva</th>
+<th>Nome do Cliente</th>
+<th>Quarto Nº</th>
+<th>Tipo de Quarto</th>
+<th>Data de Check-in</th>
+<th>Data de Check-out</th>
+<th>Preço Total</th>
+<th>Ver Detalhes</th>
+</tr>'; 
 
-    while ($row = $result->fetch_assoc()) {
-        echo '<tr>';
-        echo '<td>' . htmlspecialchars($row['n_reserva']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['tipo_reserva']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['n_pessoas']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['cpf']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['email']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['nome']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['telefone']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['pedido']) . '</td>';
-        echo '<td>' . htmlspecialchars($row['preco']) . '</td>'; 
-        echo '<td><a href="detalhes.php?id=' . urlencode($row['id']) . '">Ver Detalhes</a></td>';
+// Laço para exibir os dados das reservas
+while ($row = $result->fetch_assoc()) {
+    echo '<tr>';
+    echo '<td>' . htmlspecialchars($row['id_reserva']) . '</td>';
+    echo '<td>' . htmlspecialchars($row['cliente_nome']) . '</td>';
+    echo '<td>' . htmlspecialchars($row['quarto_numero']) . '</td>';
+    echo '<td>' . htmlspecialchars($row['quarto_tipo']) . '</td>';
+    echo '<td>' . htmlspecialchars($row['data_checkin']) . '</td>';
+    echo '<td>' . htmlspecialchars($row['data_checkout']) . '</td>';
+    echo '<td>' . htmlspecialchars($row['total']) . '</td>';
+    echo '<td><a href="detalhes.php?id=' . urlencode($row['id_reserva']) . '">Ver Detalhes</a></td>';
+    echo '</tr>';
+}
 
-        echo '</tr>';
-    }
-
-    echo '</table>';
+echo '</table>';
 } else {
-    echo "No records found.";
+echo "No records found.";
 }
 
 include('footer.php');

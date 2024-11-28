@@ -4,25 +4,45 @@ include('protecao.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $id = $mysqli->real_escape_string($_POST['id']);
+    // Recuperando os dados do formulário
+    $id_reserva = $mysqli->real_escape_string($_POST['id_reserva']);
     $nome = $mysqli->real_escape_string($_POST['nome']);
     $cpf = $mysqli->real_escape_string($_POST['cpf']);
     $email = $mysqli->real_escape_string($_POST['email']);
     $telefone = $mysqli->real_escape_string($_POST['telefone']);
-    $n_reserva = $mysqli->real_escape_string($_POST['n_reserva']);
-    $tipo_reserva = $mysqli->real_escape_string($_POST['tipo_reserva']);
-    $n_pessoas = $mysqli->real_escape_string($_POST['n_pessoas']);
-    $pedido = $mysqli->real_escape_string($_POST['pedido']);
-    $preco = $mysqli->real_escape_string($_POST['preco']);
+    $endereco = $mysqli->real_escape_string($_POST['endereco']);
+    $preco = $mysqli->real_escape_string($_POST['preco']);  // Preço da reserva
 
+    // Atualizando as informações da tabela de Clientes
+    $sql_cliente = "UPDATE Clientes SET nome = '$nome', cpf = '$cpf', email = '$email', telefone = '$telefone', endereco = '$endereco' WHERE id_cliente = (SELECT id_cliente FROM Reservas WHERE id_reserva = '$id_reserva')";
 
-    $sql = "UPDATE cliente SET n_reserva = '$n_reserva', tipo_reserva = '$tipo_reserva', n_pessoas = '$n_pessoas', pedido = '$pedido', preco = '$preco', nome = '$nome', cpf = '$cpf', email = '$email', telefone = '$telefone' WHERE id = '$id'";
-    
-    if ($mysqli->query($sql) === TRUE) {
-        echo "Record updated successfully";
-        header('Location: detalhes.php?id=' . $id);
-    } else {
-        echo "Erro ao atualizar dados: " . $mysqli->error;
+    // Atualizando as informações da tabela de Reservas (preço da reserva)
+    $sql_reserva = "UPDATE Reservas SET total = '$preco' WHERE id_reserva = '$id_reserva'";
+
+    // Executando as consultas
+    $mysqli->begin_transaction();
+    try {
+        if ($mysqli->query($sql_cliente) === FALSE) {
+            throw new Exception("Erro ao atualizar cliente: " . $mysqli->error);
+        }
+
+        if ($mysqli->query($sql_reserva) === FALSE) {
+            throw new Exception("Erro ao atualizar reserva: " . $mysqli->error);
+        }
+
+        // Caso tenha uma consulta para atualizar o pagamento (se aplicável)
+        // if ($mysqli->query($sql_pagamento) === FALSE) {
+        //     throw new Exception("Erro ao atualizar pagamento: " . $mysqli->error);
+        // }
+
+        $mysqli->commit();
+        echo "Dados atualizados com sucesso!";
+        header('Location: detalhes.php?id=' . $id_reserva);
+        exit;
+
+    } catch (Exception $e) {
+        $mysqli->rollback();
+        echo "Erro ao atualizar os dados: " . $e->getMessage();
     }
 
     $mysqli->close();

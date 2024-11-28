@@ -99,7 +99,7 @@ include('header.php');
                         echo '<h3>Registro do Funcionário</h3>';
                         echo '<p>' . htmlspecialchars($row['registro_func']) . '</p>';
                         echo '<hr>';
-                        echo '<h3>Data de Efetivaçãp</h3>';
+                        echo '<h3>Data de Efetivação</h3>';
                         echo '<p>' . htmlspecialchars($row['data_efetiv']) . '</p>';
                         echo '<hr>';
                         echo '<h3>Status</h3>';
