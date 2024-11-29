@@ -13,8 +13,6 @@
 $(document).ready(function() {
     $('#cpf').mask('000.000.000-00');
     $('#telefone').mask('(00) 00000-0000');
-    $('#data_checkin').mask('00/00/0000');
-    $('#data_checkout').mask('00/00/0000');
     $('#preco').mask('#,##0.00', {reverse: true});
     $('#n_reserva').mask('0000');
     $('#n_pessoas').mask('00');
@@ -27,6 +25,10 @@ $(document).ready(function() {
     include('conexao.php');
     include('header.php');
     include('protecao.php');
+
+    // Buscar os quartos disponíveis
+    $sql_quartos = "SELECT id_quarto, numero, tipo, preco_noite, status FROM Quartos WHERE status = 'Disponível'";
+    $result_quartos = $mysqli->query($sql_quartos);
 ?>
 
 <div class="novoc-maindiv">
@@ -69,16 +71,31 @@ $(document).ready(function() {
                 <input type="text" id="n_pessoas" name="n_pessoas" required>
 
                 <label for="data_checkin">Data de Check-in:</label>
-                <input type="text" id="data_checkin" name="data_checkin" required>
+                <input type="date" id="data_checkin" name="data_checkin" required>
 
                 <label for="data_checkout">Data de Check-out:</label>
-                <input type="text" id="data_checkout" name="data_checkout" required>
+                <input type="date" id="data_checkout" name="data_checkout" required>
 
                 <label for="preco">Preço Total:</label>
                 <input type="text" id="preco" name="preco" required>
 
                 <label for="pedido">Pedido Especial:</label>
                 <input type="text" id="pedido" name="pedido">
+
+                <!-- Seção para escolher o quarto -->
+                <label for="id_quarto">Escolha o Quarto:</label>
+                <select id="id_quarto" name="id_quarto" required>
+                    <?php
+                    // Exibir os quartos disponíveis
+                    if ($result_quartos->num_rows > 0) {
+                        while ($row = $result_quartos->fetch_assoc()) {
+                            echo "<option value='" . $row['id_quarto'] . "'>Quarto Nº " . $row['numero'] . " - " . $row['tipo'] . " - R$ " . number_format($row['preco_noite'], 2, ',', '.') . "</option>";
+                        }
+                    } else {
+                        echo "<option value=''>Nenhum quarto disponível</option>";
+                    }
+                    ?>
+                </select>
             </div>
         </div>
 
