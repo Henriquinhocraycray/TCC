@@ -128,7 +128,7 @@ $(document).ready(function() {
         </div>
 
         <div class="novoc-btndiv">
-            <a href="home.php">
+            <a href="dados_gerais.php">
                 <button id="btn-novoc-back" type="button">Voltar</button>
             </a>
             <button id="btn-novoc-c" type="submit">Confirmar</button>

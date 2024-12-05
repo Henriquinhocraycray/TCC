@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 if ($mysqli->query($sql_pagamento) === TRUE) {
                     echo "Dados inseridos com sucesso!";
-                    header("Location: home.php");  // Redireciona após a confirmação
+                    header("Location: dados_gerais.php");  // Redireciona após a confirmação
                     exit();
                 } else {
                     echo "Erro ao registrar o pagamento: " . $mysqli->error;

@@ -16,7 +16,7 @@
                 <a href="home.php">Página inicial</a>
             </div>
             <div class="op">
-                <a href="#">Dados da empresa</a>
+                <a href="dados_gerais.php">Dados da empresa</a>
             </div>
             <div class="op">
                 <a href="#">Dados gerais</a>

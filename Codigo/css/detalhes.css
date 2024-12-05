@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #004976;
+    background-color: #421c88;
     height: 157vh;
     width: 32vw;
 }
@@ -30,14 +30,14 @@
 }
 
 .det-optdiv{
-    background-color: #004976;
+    background-color: #421c88;
     border-radius: 4px;
     padding: 15px;
 }
 
 .det-optdiv:hover{
     transition: 0.5s;
-    background-color: #002942;
+    background-color: #2c135a;
 }
 
 .det-subdiv a{
@@ -57,13 +57,13 @@
     height: 55px;
     border: 0;
     border-radius: 4px;
-    background-color: #47d7ac;
+    background-color: #D1C4E9;
     font-size: large;
 }
 
 #btn-mod:hover{
     transition: 0.1s;
-    background-color: #86d7bf;
+    background-color: #dedae6;
     cursor: pointer;
 }
 
@@ -161,7 +161,7 @@
     width: 60vw;
     padding: 30px;
     border-radius: 20px;
-    background-color: #004976;
+    background-color: #421c88;
     color: white;
     gap: 10px;
 }

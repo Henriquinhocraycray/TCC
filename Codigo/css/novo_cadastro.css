@@ -30,7 +30,7 @@
     width: 530px;
     height: 667px;
     padding: 20px;
-    background-color: #004976;
+    background-color: #421c88;
     border-radius: 10px;
     font-size: large;
     color: white;
@@ -52,13 +52,13 @@
     border-bottom: 1px solid white;
     outline: none;
     padding: 5px;
-    background-color: #004976;
+    background-color: #421c88;
     color: white;
     font-size: large;
 }
 
 .novoc-div select{
-    background-color: #004976;
+    background-color: #421c88;
     color: white;
     border: 0;
     border-bottom: 1px solid white;
@@ -97,13 +97,13 @@
     height: 47px;
     border: 0;
     border-radius: 4px;
-    background-color: #47d7ac;
+    background-color: #D1C4E9;
     font-size: large;
     
 }
 
 #btn-novoc-c:hover{
     transition: 0.2s;
-    background-color: rgb(169, 213, 200);
+    background-color: #dedae6;
     cursor: pointer;
 }

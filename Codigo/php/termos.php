@@ -9,7 +9,7 @@ $title = "Termos e Uso";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="termos.css"> 
+    <link rel="stylesheet" href="../css/termos.css"> 
 </head>
 
     <?php
@@ -22,8 +22,10 @@ $title = "Termos e Uso";
         
     <div class="content">
         <section>
+        <br><br>
             <h2> Data de Vigência: 06/12/2024</h2>
             <p> Bem-vindo ao Serviço de Hospedagem de Informações da LaR Database (“Serviço”). Estes Termos e Condições de Uso (“Termos”) estabelecem as regras para acessar e utilizar o Serviço, que é destinado ao gerenciamento e armazenamento de dados de empregados e clientes de hotéis e pousadas. Ao utilizar o Serviço, você concorda em cumprir estes Termos. Se não concordar com qualquer parte dos Termos, você não deve usar o Serviço.</p>
+            <br><br>
         </section>
 
         <section>
@@ -32,6 +34,7 @@ $title = "Termos e Uso";
             <p>Ao acessar ou utilizar o Serviço, você confirma que leu, compreendeu e concorda com todos os Termos. Estes Termos constituem um contrato vinculativo entre você e a LaR Database.</p>
             <h4>Se Não Concordar</h4>
             <p> Se você não concordar com qualquer parte destes Termos, deve interromper o uso do Serviço imediatamente. O uso continuado do Serviço após alterações a estes Termos será considerado como aceitação das mudanças.</p>
+            <br><br>        
         </section>
 
         <section>
@@ -40,6 +43,7 @@ $title = "Termos e Uso";
             <p> A LaR Database pode modificar estes Termos periodicamente para refletir mudanças nos serviços, atualizações tecnológicas ou para atender a requisitos legais. Alterações serão publicadas em nosso site ou aplicativo e entrarão em vigor na data de publicação.</p>
             <h4> Como Acompanhar as Alterações</h4>
             <p> É sua responsabilidade revisar regularmente estes Termos. A continuidade no uso do Serviço após a publicação de modificações indica sua aceitação dos Termos alterados.</p>
+            <br><br>
         </section>
 
         <section>
@@ -57,6 +61,7 @@ $title = "Termos e Uso";
             <p> - Ofensa: Conteúdos que causem dano emocional ou desconforto a outros.- Difamação: Material que prejudique a reputação de indivíduos ou entidades.</p>
             <p> - Obscenidade: Conteúdo sexualmente explícito ou que promova comportamentos indecentes.</p>
             <p> - Violação de Propriedade Intelectual: Infringir direitos autorais, marcas registradas ou outros direitos de propriedade intelectual.</p>
+            <br><br>
         </section>
 
         <section>
@@ -65,6 +70,7 @@ $title = "Termos e Uso";
             <p> Para utilizar certas funcionalidades do Serviço, você deve criar uma conta. Ao criar e gerenciar sua conta, você deve:</p>
             <p> - Informações Precisos: Fornecer informações verdadeiras, completas e atualizadas.</p>
             <p> - Segurança da Conta: Proteger suas credenciais de acesso e notificar imediatamente a LaR Database sobre qualquer uso não autorizado ou atividade suspeita</p>
+            <br><br>
         </section>
 
         <section>
@@ -73,6 +79,7 @@ $title = "Termos e Uso";
             <p> Todo o conteúdo e material disponível no Serviço, incluindo marcas registradas, logotipos, textos, gráficos, imagens e software, é propriedade da LaR Database ou de nossos licenciadores e está protegido por leis de propriedade intelectual.</p>
             <p> - Reprodução e Modificação: É proibido copiar, modificar, distribuir ou criar obras derivadas do conteúdo sem autorização prévia.</p>
             <p>- Distribuição e Exibição: A distribuição ou exibição pública do conteúdo sem permissão é estritamente proibida.</p>
+            <br><br>
         </section>
 
         <section>
@@ -94,6 +101,7 @@ $title = "Termos e Uso";
             <p> - Controle de Acesso: Restrição de acesso a dados sensíveis.</p>
             <p> - Backup e Recuperação: Procedimentos para garantir a integridade dos dados e recuperação em caso de falhas.</p>
             <h6> Apesar das nossas medidas de segurança, não podemos garantir proteção absoluta contra todos os riscos.</h6>
+            <br><br>    
         </section>
 
         <section>
@@ -101,6 +109,7 @@ $title = "Termos e Uso";
             <h4> Limitações da Responsabilidade</h4>
             <p> O Serviço é fornecido "no estado em que se encontra" e "conforme disponível". Não garantimos que o Serviço estará sempre disponível, seguro ou livre de erros.</p>
             <p> - Danos Diretos e Indiretos: Na máxima extensão permitida pela lei, incluindo a LGPD, não somos responsáveis por danos indiretos, incidentais, especiais ou consequenciais resultantes do uso ou da incapacidade de usar o Serviço. Isso inclui, mas não se limita a, perda de dados e interrupção de negócios</p>
+            <br><br>
         </section>
 
         <section>
@@ -116,18 +125,22 @@ $title = "Termos e Uso";
             <h4> Encerramento do Acesso</h4>
             <p> Podemos suspender ou encerrar sua conta e acesso ao Serviço a qualquer momento, com ou sem aviso prévio, por qualquer motivo, incluindo violação destes Termos.</p>
             <p> - Consequências da Rescisão: A rescisão não isenta você de responsabilidades ou obrigações acumuladas até a data de término. Seus direitos e nossas responsabilidades permanecem válidos até o término.</p>
+            <br><br>
         </section>
 
         <section>
             <h2> 10. Lei Aplicável e Jurisdição</h2>
             <h4> Aplicação das Leis</h4>
             <p> Estes Termos são regidos pelas leis do Brasil, excluindo princípios de conflitos de leis. Qualquer disputa relacionada a estes Termos será resolvida exclusivamente nos tribunais da Santo André, São Paulo, que terão jurisdição exclusiva.</p>
+            <br><br>
         </section>
 
         <section>
             <h2> 11. Disposições Gerais</h2>
             <h4> Validade das Disposições</h4>
             <p> Se qualquer disposição destes Termos for considerada inválida ou inexequível por um tribunal competente, a validade e a exequibilidade das disposições restantes não serão afetadas. A falha da LaR Database em exigir o cumprimento de qualquer disposição não constitui renúncia a essa disposição ou a qualquer outro direito.</p>
+        
+            <br><br>
         </section>
 
         <section>

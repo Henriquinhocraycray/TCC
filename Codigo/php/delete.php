@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             $mysqli->commit();
 
-            header('Location: home.php');
+            header('Location: dados_gerais.php');
             exit;
 
         } else {

@@ -46,7 +46,7 @@
                 $_SESSION['cargo'] = $usuario['cargo'];
 
                 echo "<script>alert('Login bem sucedido!');</script>";
-                echo '<script>window.location.href="home.php";</script>';
+                echo '<script>window.location.href="dados_gerais.php";</script>';
             } else {
                 echo "<script>alert('Falha ao logar! Registro ou senha incorretos');</script>";
             }

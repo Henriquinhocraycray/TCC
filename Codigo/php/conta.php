@@ -42,7 +42,7 @@ include('header.php');
 
     <div class="det-div1 acc-div" id="det-div1">
         <div class="det-subdiv">
-            <a href="home.php"><img src="../img/seta.png" alt="Back"></a>
+            <a href="dados_gerais.php"><img src="../img/seta.png" alt="Back"></a>
             <a href="#" id="cliente-data-link">
                 <div class="det-optdiv">Informações Pessoais</div>
             </a>
