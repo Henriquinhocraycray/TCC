@@ -47,10 +47,15 @@ $title = "home";
                 <h2>Nossos Planos</h2>
                 <hr>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  A LaR Database oferece dois planos distintos para atender às necessidades de diferentes tipos de pousadas: o Plano Padrão e o Plano Completo. Cada plano foi desenvolvido com foco na simplicidade e eficiência para otimizar a gestão de dados e operações.
+
+Plano Padrão
+  O Plano Padrão é ideal para pousadas de pequeno a médio porte que buscam uma solução prática e acessível. Ele oferece funcionalidades essenciais para o gerenciamento de reservas, clientes e informações de pagamentos, com uma interface simples e fácil de usar. Além disso, os dados são armazenados com segurança, permitindo que os proprietários acessem informações críticas de forma rápida e eficiente. Este plano é perfeito para quem está começando ou para aqueles que não necessitam de recursos avançados, mas desejam um sistema robusto para organização e controle.<br>
+
+Plano Completo
+  O Plano Completo é voltado para pousadas de médio a grande porte ou para aquelas que necessitam de mais funcionalidades e personalização. Ele oferece todos os recursos do Plano Padrão, mas com benefícios adicionais como relatórios detalhados, integração com outros sistemas de gestão, personalização avançada e suporte prioritário. Este plano é ideal para empresas que buscam expandir suas operações e otimizar ainda mais seus processos, oferecendo uma solução mais integrada e com mais ferramentas para análise de dados e controle operacional.<br>
+
+  
                   </p>
                   <a href="licenca.php">Ver Licenças</a>
             </section>
