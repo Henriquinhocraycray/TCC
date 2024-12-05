@@ -22,13 +22,13 @@ $title = "home";
         <div id="carrosselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../Codigo/img/pousada3.jpg" class="d-block w-100" alt="Imagem 1">
+      <img src="../Pousadas/pousada3.jpg" class="d-block w-100" alt="Imagem 1">
     </div>
     <div class="carousel-item">
-      <img src="../Codigo/img/pousada2.jpg" class="d-block w-100" alt="Imagem 2">
+      <img src="../Pousadas/pousada2.jpg" class="d-block w-100" alt="Imagem 2">
     </div>
     <div class="carousel-item">
-      <img src="../Codigo/img/pousada.jpg" class="d-block w-100" alt="Imagem 3">
+      <img src="../Pousadas/pousada.jpg" class="d-block w-100" alt="Imagem 3">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carrosselExample" data-bs-slide="prev">
