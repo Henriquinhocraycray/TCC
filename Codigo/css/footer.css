@@ -128,6 +128,8 @@
   height: 100%;
   width: 25%;
   text-align: center;
+  gap: 0px;
+  margin:none;
 
 }
 .content-3 p:nth-child(4){

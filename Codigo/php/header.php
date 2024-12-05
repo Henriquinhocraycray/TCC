@@ -16,10 +16,10 @@
                 <a href="home.php">Página inicial</a>
             </div>
             <div class="op">
-                <a href="dados_gerais.php">Dados da empresa</a>
+                <a href="">Dados da empresa</a>
             </div>
             <div class="op">
-                <a href="#">Dados gerais</a>
+                <a href="dados_gerais.php">Dados gerais</a>
             </div>
 
             <div class="off-screen-menu">
