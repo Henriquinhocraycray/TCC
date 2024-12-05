@@ -23,7 +23,7 @@
             margin-bottom: 10px;
         }
 
-        h2 {
+        .h2 {
             font-size: 18px;
             margin-bottom: 20px;
         }
@@ -95,7 +95,7 @@
 
 <div class="container">
     <h1>Dados da Empresa</h1>
-    <h2>*Nome da Pousada*</h2>
+    <h2 class="h2">*Nome da Pousada*</h2>
     <div class="form-container">
         
         <input type="text" value="Razão Social" placeholder="Razão Social">
