@@ -47,7 +47,7 @@
             <p id="price">Anual: R$ 5.499 (com dois meses gratuitos)</p>
         </div>
     </div>
-    
+    <div class="bk-btn"></div>
 </div>
 
 
