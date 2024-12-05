@@ -1,5 +1,5 @@
 <a?php
-// termos.php
+ termos.php
 $title = "home";
 ?>
 

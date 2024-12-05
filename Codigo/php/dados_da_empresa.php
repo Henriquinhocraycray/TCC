@@ -29,19 +29,23 @@
         }
 
         .form-container {
-            background-color: #5d2d91;
+            background-color: #421c88;
             color: #fff;
             padding: 20px;
             border-radius: 10px;
         }
 
         .form-container input {
+            outline: none;
+            border: 0;
+            border-bottom: 1px solid #fff;
+            border-radius: 0px;
+            background: #421c88;
             width: 97%;
             padding: 10px;
             margin: 10px 0;
-            border: none;
-            border-radius: 5px;
             font-size: 16px;
+            color: #fff;
         }
 
         .form-container input:disabled {
@@ -70,11 +74,16 @@
             color: #fff;
         }
         .button-container a:first-child:hover{
-
+            transition: 0.5s;
+            background-color: #2c135a;
         }
         .button-container a:last-child {
             background-color: #b19cd9;
             color: #000;
+        }
+        .button-container a:last-child:hover{
+            transition: 0.5s;
+            background-color: #dedae6;
         }
     </style>
 </head>
