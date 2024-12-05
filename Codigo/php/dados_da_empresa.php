@@ -12,26 +12,6 @@
             background-color: #f9f9f9;
         }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-        }
-
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-
-        .navbar a.active {
-            background-color: #b19cd9;
-        }
-
         .container {
             max-width: 600px;
             margin: 50px auto;
@@ -57,60 +37,80 @@
         }
 
         .form-container input {
-            width: 100%;
+            width: 97%;
             padding: 10px;
             margin: 10px 0;
             border: none;
             border-radius: 5px;
+            font-size: 16px;
         }
 
-        .form-container button {
+        .form-container input:disabled {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
             width: 48%;
+            text-align: center;
             padding: 10px;
-            border: none;
             border-radius: 5px;
             font-size: 16px;
-            cursor: pointer;
+            display: block;
         }
 
-        .form-container button:first-child {
+        .button-container a:first-child {
             background-color: #000;
             color: #fff;
         }
 
-        .form-container button:last-child {
+        .button-container a:last-child {
             background-color: #b19cd9;
             color: #000;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#">Página Inicial</a>
-        <a href="#" class="active">Dado da Pousada</a>
-        <a href="#">Dados Gerais</a>
-    </div>
 
-    <div class="container">
-        <h1>Dados da Empresa</h1>
-        <h2>Pousada Tal</h2>
-        <div class="form-container">
-            <form action="processa_dados.php" method="POST">
-                <input type="text" name="razao_social" placeholder="Razão Social" required>
-                <input type="text" name="nome_responsavel" placeholder="Nome do Responsável" required>
-                <input type="text" name="nome_pousada" placeholder="Nome da Pousada" required>
-                <input type="text" name="endereco" placeholder="Endereço" required>
-                <input type="text" name="numero" placeholder="Número" required>
-                <input type="text" name="complemento" placeholder="Complemento">
-                <input type="text" name="cep" placeholder="CEP" required>
-                <input type="email" name="email" placeholder="E-mail" required>
+<?php
+    include('header.php');
+?>
 
-                <div style="display: flex; justify-content: space-between;">
-                    <button type="button" onclick="alert('Comprar uma licença em breve!')">Comprar uma licença</button>
-                    <button type="submit">Confirmar</button>
-                </div>
-            </form>
+<div class="container">
+    <h1>Dados da Empresa</h1>
+    <h2>Pousada *Nome da Pousada*</h2>
+    <div class="form-container">
+        
+        <input type="text" value="Razão Social" placeholder="Razão Social">
+        <input type="text" value="Nome do Responsável" placeholder="Nome do Responsável">
+        <input type="text" value="Nome da Pousada" placeholder="Nome da Pousada">
+        <input type="text" value="Endereço" placeholder="Endereço">
+        <input type="text" value="Número" placeholder="Número">
+        <input type="text" value="Complemento" placeholder="Complemento">
+        <input type="text" value="CEP" placeholder="CEP">
+        <input type="email" value="E-mail" placeholder="E-mail">
+        
+        <!-- Links para as páginas -->
+        <div class="button-container">
+            <!-- Link para 'licenca.php' -->
+            <a href="licenca.php" class="btn-licenca">Comprar uma licença</a>
+
+            <!-- Link para 'dados_gerais.php' -->
+            <a href="dados_gerais.php" class="btn-confirmar">Confirmar</a>
         </div>
     </div>
+</div>
+
+<?php
+    include('footer.php');
+?>
+
 </body>
 </html>
