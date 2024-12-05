@@ -25,7 +25,7 @@
   width: 100%;
   font-size: 18px;
   height: 120px;
-  background: #004976;
+  background: #916ada;
   color: #fff;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@
   position: absolute;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-bottom: 70px solid #003556;
+  border-bottom: 70px solid #421c88;
   right: -25px;
   transform: rotate(-90deg);
 }
@@ -53,7 +53,7 @@
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  background: #004976;
+  background: #916ada;
 }
 #footer-block ul{
   display: flex;
@@ -91,7 +91,7 @@
 }
 .under-container{
   width: 100%;
-  background: #003556;
+  background: #421c88;
   color: #fff;
   height: 150px;
   justify-content:space-between;
@@ -184,7 +184,7 @@
   position: absolute;
   height: 420px;
   width: 150px;
-  background-color: #47D7AC;
+  background-color: #916ada;
   border-top-right-radius: 4px;
   z-index: 2;
   left: 0px; 

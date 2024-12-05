@@ -1,3 +1,8 @@
+<?php
+    include('conexao.php');
+    include('header.php');
+    include('protecao.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,18 +20,45 @@ $(document).ready(function() {
     $('#telefone').mask('(00) 00000-0000');
     $('#preco').mask('#,##0.00', {reverse: true});
     $('#n_reserva').mask('0000');
-    $('#n_pessoas').mask('00');
+    $('#n_pessoas').mask('0');
+    
+    // Função para atualizar os quartos no select com base no tipo de reserva
+    function atualizarQuartos(tipoReserva) {
+        $.ajax({
+            url: 'get_quartos.php',
+            method: 'GET',
+            data: { tipo: tipoReserva },
+            success: function(response) {
+                $('#id_quarto').html(response);
+            }
+        });
+    }
+
+    $('#tipo_reserva').change(function() {
+        var tipoReserva = $(this).val();
+        atualizarQuartos(tipoReserva);
+
+        // Configurações para o número de pessoas
+        if (tipoReserva === 'solteiro') {
+            $('#n_pessoas').val(1);
+            $('#n_pessoas').attr('readonly', true);
+        } else if (tipoReserva === 'casal') {
+            $('#n_pessoas').val(2);
+            $('#n_pessoas').attr('readonly', true);
+        } else if (tipoReserva === 'familia') {
+            $('#n_pessoas').val(1);
+            $('#n_pessoas').attr('readonly', false);
+            $('#n_pessoas').attr('max', 6);
+        }
+    });
+
+    var tipoInicial = $('#tipo_reserva').val();
+    atualizarQuartos(tipoInicial);
 });
 </script>
-
 <body>
 
 <?php
-    include('conexao.php');
-    include('header.php');
-    include('protecao.php');
-
-    // Buscar os quartos disponíveis
     $sql_quartos = "SELECT id_quarto, numero, tipo, preco_noite, status FROM Quartos WHERE status = 'Disponível'";
     $result_quartos = $mysqli->query($sql_quartos);
 ?>
@@ -68,7 +100,7 @@ $(document).ready(function() {
                 </select>
 
                 <label for="n_pessoas">Nº de Pessoas:</label>
-                <input type="text" id="n_pessoas" name="n_pessoas" required>
+                <input type="number" id="n_pessoas" name="n_pessoas" required>
 
                 <label for="data_checkin">Data de Check-in:</label>
                 <input type="date" id="data_checkin" name="data_checkin" required>
@@ -76,17 +108,13 @@ $(document).ready(function() {
                 <label for="data_checkout">Data de Check-out:</label>
                 <input type="date" id="data_checkout" name="data_checkout" required>
 
-                <label for="preco">Preço Total:</label>
-                <input type="text" id="preco" name="preco" required>
-
                 <label for="pedido">Pedido Especial:</label>
                 <input type="text" id="pedido" name="pedido">
 
-                <!-- Seção para escolher o quarto -->
                 <label for="id_quarto">Escolha o Quarto:</label>
                 <select id="id_quarto" name="id_quarto" required>
                     <?php
-                    // Exibir os quartos disponíveis
+                    // Exibe os quartos disponíveis
                     if ($result_quartos->num_rows > 0) {
                         while ($row = $result_quartos->fetch_assoc()) {
                             echo "<option value='" . $row['id_quarto'] . "'>Quarto Nº " . $row['numero'] . " - " . $row['tipo'] . " - R$ " . number_format($row['preco_noite'], 2, ',', '.') . "</option>";

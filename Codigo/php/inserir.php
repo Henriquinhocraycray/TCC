@@ -32,33 +32,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Calcular o total
         $total = $preco_noite * $dias;
     } else {
-        $total = 0; // Caso não encontre o preço, define o total como 0
+        $total = 0;
     }
 
-    // 1. Insere o cliente no banco de dados
     $sql_cliente = "INSERT INTO Clientes (nome, cpf, email, telefone, endereco) 
                     VALUES ('$nome', '$cpf', '$email', '$telefone', '$endereco')";
 
     if ($mysqli->query($sql_cliente) === TRUE) {
         $id_cliente = $mysqli->insert_id;
 
-        // 2. Insere a reserva
         $sql_reserva = "INSERT INTO Reservas (id_cliente, id_quarto, data_checkin, data_checkout, total) 
                         VALUES ('$id_cliente', '$id_quarto', '$data_checkin', '$data_checkout', '$total')";
 
         if ($mysqli->query($sql_reserva) === TRUE) {
             $id_reserva = $mysqli->insert_id;
 
-            // 3. Insere o pagamento
-            $sql_pagamento = "INSERT INTO Pagamentos (id_reserva, metodo, valor, data_pagamento) 
-                              VALUES ('$id_reserva', '$metodo_pagamento', '$valor_pagamento', CURDATE())";
+            // Atualize o status do quarto para 'Ocupado'
+            $sql_update_quarto = "UPDATE Quartos SET status = 'Ocupado' WHERE id_quarto = '$id_quarto'";
+            if ($mysqli->query($sql_update_quarto) === TRUE) {
+                // Inserir o pagamento
+                $sql_pagamento = "INSERT INTO Pagamentos (id_reserva, metodo, valor, data_pagamento) 
+                                  VALUES ('$id_reserva', '$metodo_pagamento', '$valor_pagamento', CURDATE())";
 
-            if ($mysqli->query($sql_pagamento) === TRUE) {
-                echo "Dados inseridos com sucesso!";
-                header("Location: home.php");  // Redireciona após a confirmação
-                exit();
+                if ($mysqli->query($sql_pagamento) === TRUE) {
+                    echo "Dados inseridos com sucesso!";
+                    header("Location: home.php");  // Redireciona após a confirmação
+                    exit();
+                } else {
+                    echo "Erro ao registrar o pagamento: " . $mysqli->error;
+                }
             } else {
-                echo "Erro ao registrar o pagamento: " . $mysqli->error;
+                echo "Erro ao atualizar o status do quarto: " . $mysqli->error;
             }
         } else {
             echo "Erro ao registrar a reserva: " . $mysqli->error;

@@ -52,7 +52,6 @@ echo '<tr>
 <th>Ver Detalhes</th>
 </tr>'; 
 
-// Laço para exibir os dados das reservas
 while ($row = $result->fetch_assoc()) {
     echo '<tr>';
     echo '<td>' . htmlspecialchars($row['id_reserva']) . '</td>';
