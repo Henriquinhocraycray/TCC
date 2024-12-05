@@ -26,7 +26,6 @@
         h2 {
             font-size: 18px;
             margin-bottom: 20px;
-            color: #666;
         }
 
         .form-container {
@@ -58,7 +57,7 @@
 
         .button-container a {
             text-decoration: none;
-            width: 48%;
+            width: 40%;
             text-align: center;
             padding: 10px;
             border-radius: 5px;
@@ -70,7 +69,9 @@
             background-color: #000;
             color: #fff;
         }
+        .button-container a:first-child:hover{
 
+        }
         .button-container a:last-child {
             background-color: #b19cd9;
             color: #000;
@@ -85,7 +86,7 @@
 
 <div class="container">
     <h1>Dados da Empresa</h1>
-    <h2>Pousada *Nome da Pousada*</h2>
+    <h2>*Nome da Pousada*</h2>
     <div class="form-container">
         
         <input type="text" value="Razão Social" placeholder="Razão Social">

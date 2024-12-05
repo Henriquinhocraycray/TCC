@@ -14,7 +14,7 @@ include('protecao.php');
 
 <br>
 <br>
-<h1 align="center">Pousada Tal</h1>
+<h1 align="center">*Nome da Pousada*</h1>
 
 <a id="home-head" href="novo_cadastro.php">
 <div class="home-head">
