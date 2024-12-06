@@ -1,4 +1,3 @@
-/*
 CREATE DATABASE tcc;
 use tcc;
 
@@ -75,4 +74,3 @@ VALUES
 (201, 'Solteiro', 150.00, 'Disponível'),
 (202, 'Casal', 200.00, 'Disponível'),
 (203, 'Família', 300.00, 'Disponível');
-*/

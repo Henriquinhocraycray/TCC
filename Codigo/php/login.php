@@ -68,7 +68,7 @@
             </form>
         </div>
         <div class="right-box">
-            <p>MEU BANCO DE DADOS!</p>
+            <p>LaR DATABASE!</p>
         </div>
     </div>
 </body>
